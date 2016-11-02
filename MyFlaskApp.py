@@ -4,7 +4,6 @@ from flask import request
 import sqlite3
 from werkzeug.contrib.fixers import ProxyFix
 
-
 app = Flask(__name__)
 DATABASE = 'myapp.db'
 def connect_db():
