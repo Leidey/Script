@@ -1,0 +1,19 @@
+{% extends 'layout.html' %}
+{% block body %}
+
+<ul>
+    <fieldset>
+    <legend><b><u>CONTACTS</u></b></legend>
+    {% for entry in entries %}
+        <br>
+        {{ entry.id }}-) {{ entry.name }}: {{ entry.number }} || <a href="/editprofile?id={{ entry.id }}">Edit Profile</a> - <a href="/deleteprofile?id={{ entry.id }}">Delete Profile</a>
+        </br>
+    {% else %}
+        <li>Sorry, We could not find any people info/data</li>
+    {% endfor %}
+    </fieldset>
+</ul>
+
+{% endblock %}
+
+

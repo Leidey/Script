@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My Flask App</title>
+</head>
+<body>
+
+
+    <div id="header">
+        <a href="/">Home</a> | <a href="/addprofileform">Add Profile</a> | <a href="/existinglist">List All Profiles</a>
+    </div>
+    <hr/>
+     <div id="content">
+        {% block body %}
+
+        {% endblock %}
+     </div>
+    <hr/>
+    <div id="footer">
+        &copy; Life
+    </div>
+
+
+</body>
+</html>
