@@ -1,0 +1,42 @@
+HOW TO USE VAGRANT
+------------------
+Vagrant is defined as the command line utility for managing the lifecycle of virtual machines
+
+How to install vagrant in linux machine:
+required Oracle Virtual Machine
+firstly install VM:
+$sudo apt-get install virtualbox
+then install vagrant:
+$sudo apt-get install vagrant
+install kernel module of VirtualBox:
+$sudo apt-get install virtualbox-dkms
+install UI of Virtualbox
+$sudo apt-get install virtualbox-qt
+to learn vagrant version:
+$vagrant -v
+
+create vagrant project for vagranfile (Vagrantfile is to describe the type of machine 
+required for a project, and how to configure and provision these machines)
+$mkdir ~/vagrant/ubuntu-trusty64
+$cd ~/vagrant/ubuntu-trusty64
+
+to initialize the current directory to be a vagrant environment 
+by creating an initial Vagrantfile if one does not already exist:
+#vagrant init user/box
+$ vagrant init ubuntu/trusty64
+
+to run VM
+$vagrant up
+
+after running vagrant up, to enable working on your guest machine:
+$vagrant ssh
+
+to shutdown VM
+$vagrant halt
+
+to stop the running machine which Vagrant is managing and 
+destroy all resources that were created during the machine creation process
+$vagrant destroy
+
+
+
