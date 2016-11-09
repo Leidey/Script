@@ -8,8 +8,6 @@ firstly install VM:
 $sudo apt-get install virtualbox
 then install vagrant:
 $sudo apt-get install vagrant
-install kernel module of VirtualBox:
-$sudo apt-get install virtualbox-dkms
 install UI of Virtualbox
 $sudo apt-get install virtualbox-qt
 to learn vagrant version:
