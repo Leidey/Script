@@ -13,7 +13,7 @@ $sudo apt-get install virtualbox-qt
 to learn vagrant version:
 $vagrant -v
 
-create vagrant project for vagranfile (Vagrantfile is to describe the type of machine 
+create vagrant project to place vagranfile (Vagrantfile is to describe the type of machine 
 required for a project, and how to configure and provision these machines)
 $mkdir ~/vagrant/ubuntu-trusty64
 $cd ~/vagrant/ubuntu-trusty64
