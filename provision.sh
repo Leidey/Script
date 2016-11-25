@@ -34,9 +34,6 @@ sudo ufw allow 5000
 echo "****** Deactivating Virtual Environment ******"
 deactivate
 
-cd****** Installing Pip, Gunicorn and Python Dependencies ******
-
-
 echo "****** Creating Systemd Unit File: MyFlaskApp.service ******"
 sudo apt-get install -y systemd-services
 
@@ -58,9 +55,9 @@ WantedBy=multi-user.target
 EOF
 
 
-echo "****** Start and Enable Systemctl ******"
-sudo systemctl start MyFlaskApp
-sudo systemctl enable MyFlaskApp
+#echo "****** Start and Enable Systemctl ******"
+#sudo systemctl start MyFlaskApp
+#sudo systemctl enable MyFlaskApp
 
 echo "****** Creating File in Nginx Sites-available ******"
 cat << EOF | sudo tee /etc/nginx/sites-available/MyFlaskApp
@@ -84,7 +81,7 @@ cd /etc/nginx
 
 echo "****** Test Nginx ******"
 sudo nginx -t
-sudo systemctl restart nginx
+#sudo systemctl restart nginx
 sudo ufw delete allow 5000
 sudo ufw allow 'Nginx Full'
 
@@ -93,7 +90,6 @@ echo "****** Completed provisioning virtual machine! ******"
 #cd 
 #cd /vagrant/MyFlaskApp
 #python MyFlaskApp.py &
-
 
 cd 
 cd /vagrant/MyFlaskApp
