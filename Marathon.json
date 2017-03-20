@@ -6,7 +6,7 @@
   "container": {
     "type": "DOCKER",
     "docker": {
-      "image": "",
+      "image": "tyediel/devops",
       "network": "BRIDGE",
       "portMappings": [
         { "containerPort": 8080, "hostPort": 0 }
