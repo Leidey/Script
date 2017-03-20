@@ -1,5 +1,8 @@
 {
   "id": "devops",
+  "cpus": 0.2,
+  "mem": 32.0,
+  "instances": 1,
   "container": {
     "type": "DOCKER",
     "docker": {
