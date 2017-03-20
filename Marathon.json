@@ -6,7 +6,7 @@
       "image": "",
       "network": "BRIDGE",
       "portMappings": [
-        { "containerPort": 5000, "hostPort": 0 }
+        { "containerPort": 8080, "hostPort": 0 }
       ]
     },
     "volumes": []
